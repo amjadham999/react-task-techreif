@@ -1,46 +1,12 @@
 import '../../assets/css/home.css';
 import HeaderImg from '../../assets/images/home_header_img.svg';
-import SectionIntro from '../Sections/SectionIntro';
+import Intro from '../Intro';
 import ServicesSection from '../Sections/ServicesSection';
-import ProjectSection from '../Sections/ProjectSection';
+import ProjectsSection from '../Sections/ProjectsSection';
 import StrategySection from '../Sections/StrategySection';
 import FactsSection from '../Sections/FactsSection';
 import FAQs from '../Sections/FAQs';
-
-let HomeData = {
-	servicesIntroData: {
-		title: 'Our Services',
-		parag:
-			'The Service We Offer Is Specifically Designed \nTo Meet Your Needs.',
-	},
-	projectsIntroData: {
-		title: 'Our Projects',
-		parag: 'You Can See Our Projects',
-	},
-	strategyIntroData: {
-		title: 'Our Strategy',
-		parag: 'Amet Minim Mollit Non Deserunt Ullamco Est \nSit Aliqua Dolor',
-	},
-	factsIntroData: {
-		title: 'Company Facts',
-		parag:
-			'The Service We Offer Is Specifically Designed \nWe Are Proud Of	Our Design Team',
-	},
-	customersIntroData: {
-		title: 'Happy Customers',
-		parag: 'We Are Proud Of Our Design Team',
-	},
-	faqsIntroData: {
-		title: 'Frequently asked questions',
-		parag:
-			'The Service We Offer Is Specifically Designed \nWe Are Proud Of	Our Design Team',
-	},
-	eventsIntroData: {
-		title: 'This just happened',
-		parag:
-			'Amet Minim Mollit Non Deserunt Ullamco Est \nSit Aliqua Dolor Do Amet Sint',
-	},
-};
+import data from '../../Data/HomeData';
 
 const HomePage = () => {
 	return (
@@ -71,38 +37,38 @@ const HomePage = () => {
 			</div>
 			{/* <!-- Services --> */}
 			<div className='container my-5'>
-				<SectionIntro data={HomeData.servicesIntroData} />
+				<Intro data={data.servicesIntro} />
 				<ServicesSection />
 			</div>
 			{/* <!-- Projects --> */}
 			<div className='container my-5'>
-				<SectionIntro data={HomeData.projectsIntroData} />
-				<ProjectSection />
+				<Intro data={data.projectsIntro} />
+				<ProjectsSection />
 			</div>
 			{/* <!-- Strategy --> */}
 			<div className='container my-5 strategy justify-content-center'>
-				<SectionIntro data={HomeData.strategyIntroData} />
+				<Intro data={data.strategyIntro} />
 				<StrategySection />
 			</div>
 			{/* <!-- Facts --> */}
 			<div className='container my-5 p-4'>
 				<div className='container py-5 custom-bg-light rounded-3'>
-					<SectionIntro data={HomeData.factsIntroData} />
+					<Intro data={data.factsIntro} />
 					<FactsSection />
 				</div>
 			</div>
 			{/* <!-- Customers --> */}
 			<div className='container my-5 strategy justify-content-center'>
-				<SectionIntro data={HomeData.customersIntroData} />
+				<Intro data={data.customersIntro} />
 			</div>
 			{/* <!-- FAQs --> */}
 			<div className='container my-5 frequently'>
-				<SectionIntro data={HomeData.faqsIntroData} />
+				<Intro data={data.faqsIntro} />
 				<FAQs />
 			</div>
 			{/* <!-- Events --> */}
 			<div className='container my-5'>
-				<SectionIntro data={HomeData.eventsIntroData} />
+				<Intro data={data.eventsIntro} />
 			</div>
 		</>
 	);
