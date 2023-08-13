@@ -1,0 +1,61 @@
+:root {
+	--black: 0, 0, 0;
+	--grey: 102, 102, 102;
+	--white: 255, 255, 255;
+	--light: 247, 247, 247;
+	--blue: 15, 122, 211;
+	--default-text-color: 40, 40, 40;
+}
+
+.custom-color-blue {
+	color: rgb(var(--blue));
+}
+
+.custom-color-grey {
+	color: rgb(var(--grey));
+}
+
+.custom-bg-light {
+	background-color: rgb(var(--light));
+}
+
+body {
+	color: rgb(var(--default-text-color));
+	font-family: 'Urbanist', sans-serif;
+	font-size: 1rem;
+}
+
+.custom-title-2 {
+	color: rgb(var(--blue));
+	font-size: 2.187rem;
+	font-weight: 600;
+}
+
+.custom-title-2-blue {
+	color: rgb(var(--blue));
+	font-size: 2.187rem;
+	font-weight: 600;
+}
+
+.custom-title-2-black {
+	color: rgb(var(--black));
+	font-size: 2.187rem;
+	font-weight: 600;
+}
+
+.custom-title-3 {
+	color: rgb(var(--black));
+	font-size: 2.187rem;
+	font-weight: 500;
+}
+
+.custom-title-5 {
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+.custom-parag {
+	color: rgb(var(--grey));
+	font-size: 1.25rem;
+	font-weight: 500;
+}

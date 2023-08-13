@@ -1,0 +1,174 @@
+/* ** Start Header Style ** */
+
+.header {
+	--highlight-orange: 255, 98, 98;
+	--header-padding-x: 1.25rem;
+	--header-padding-y: 0.75rem;
+}
+
+.header-title {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.header-parag {
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: rgb(var(--black), 0.60);
+	text-align: justify;
+}
+
+.header-title, .header-parag {
+	text-shadow: 0 4px 4px rgba(var(--black), 0.25);
+}
+
+.title-highlight {
+	color: rgb(var(--highlight-orange));
+}
+
+.header-btn {
+	font-weight: 600;
+	padding: var(--header-padding-y) var(--header-padding-x);
+	background-color: rgb(var(--blue));
+}
+
+/* ** End Header Style ** */
+
+/* ** Start Strategy Style ** */
+
+.strategy {
+	--strategy-desc-color: rgb(106, 106, 106);
+	counter-reset: strategy;
+}
+
+/* .strategy-body {
+	height: 100%;
+} */
+
+.counter-nest::before {
+	counter-increment: strategy;
+	content: counter(strategy);
+}
+
+.strategy-card {
+	background-color: white;
+	/* width: ; */
+	-webkit-box-shadow: 2px 4px 15px 0px rgba(246, 246, 246, 1);
+	-moz-box-shadow: 2px 4px 15px 0px rgba(246, 246, 246, 1);
+	box-shadow: 2px 4px 15px 0px rgba(246, 246, 246, 1);
+}
+
+.col:nth-child(4n+1)>.strategy-card {
+	--strategy-card-color: #0F7AD3;
+	--strategy-card-bg: #E5F4FD;
+}
+
+.col:nth-child(4n+2)>.strategy-card {
+	--strategy-card-color: #F79D56;
+	--strategy-card-bg: #FFF4EC;
+}
+
+.col:nth-child(4n+3)>.strategy-card {
+	--strategy-card-color: #43CEA2;
+	--strategy-card-bg: #EDFDFF;
+}
+
+.col:nth-child(4n+4)>.strategy-card {
+	--strategy-card-color: #9C9493;
+	--strategy-card-bg: #EEEEEE;
+}
+
+.strategy-card-number {
+	color: var(--strategy-card-color);
+	background-color: var(--strategy-card-bg);
+	width: 3.75rem;
+	height: 3.75rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 1.563rem;
+}
+
+.strategy-card-name {
+	border-bottom-color: var(--strategy-card-color);
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	display: inline-flex;
+	/* padding-bottom: ; */
+	font-size: 1.25rem;
+}
+
+.strategy-card-number, .strategy-card-name {
+	font-weight: 600;
+}
+
+.strategy-card-desc {
+	color: var(--strategy-desc-color);
+	/* text-align: justify; */
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+/* ** End Strategy Style ** */
+
+/* ** Start Facts Style ** */
+
+.fact-icon {
+	width: 6.93rem;
+	height: 6.93rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.col:nth-child(3n+1)>.fact-icon {
+	background-color: #E3FFF1;
+	border: 1px solid #80ffbf;
+}
+
+.col:nth-child(3n+2)>.fact-icon {
+	background-color: #FFF4EC;
+	border: 1px solid #ffb783;
+}
+
+.col:nth-child(3n+3)>.fact-icon {
+	background-color: #EDFDFF;
+	border: 1px solid #81edfb;
+}
+
+/* ** End Facts Style ** */
+
+/* ** Start FAQs Style ** */
+
+.frequently .collapse-card {
+	-webkit-box-shadow: 0px 3px 20px -5px rgba(144, 144, 144, 0.6);
+	-moz-box-shadow: 0px 3px 20px -5px rgba(144, 144, 144, 0.6);
+	box-shadow: 0px 3px 20px -5px rgba(144, 144, 144, 0.6);
+}
+
+.freq-body {
+	background-color: #F7F7FB;
+}
+
+.freq-title {
+	color: #170F49;
+}
+
+.freq-parag {
+	color: #6F6C90;
+	font-size: 1.125rem;
+	font-weight: 400;
+}
+
+.freq-btn {
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 12px;
+	background-color: rgb(var(--blue));
+	color: white;
+}
+
+/* ** END FAQs Style ** */

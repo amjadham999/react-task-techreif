@@ -1,0 +1,21 @@
+.navbar {
+	--bs-navbar-color: rgb(var(--black));
+	--bs-navbar-hover-color: rgba(var(--blue), 0.8);
+	--bs-navbar-disabled-color: rgba(var(--blue), 0.3);
+	--bs-navbar-active-color: rgb(var(--blue));
+	background-color: rgba(var(--white), 0.2);
+}
+
+.navbar-toggler {
+	color: rgba(var(--black), 0.8);
+}
+
+.navbar-nav .nav-link {
+	font-size: 1.125rem;
+	font-weight: 400;
+}
+
+.navbar-nav .nav-link.active {
+	font-weight: 600;
+	text-shadow: 0 4px 4px rgba(var(--black), 0.25);
+}
