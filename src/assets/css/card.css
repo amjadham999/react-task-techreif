@@ -1,32 +1,26 @@
-.blog-header {
-	background: url('../images/header_img.svg') no-repeat center scroll;
-	background-size: cover;
-	height: 50vh;
-}
-
-.blog-card {
+.card {
 	background-color: white;
 	-webkit-box-shadow: 2px 4px 15px 0px rgb(230, 230, 230);
 	-moz-box-shadow: 2px 4px 15px 0px rgba(230, 230, 230, 1);
 	box-shadow: 2px 4px 15px 0px rgb(230, 230, 230);
 }
 
-.blog-title {
-	font-size: 1.8rem;
+.card-title {
+	font-size: 1.5rem;
 	font-weight: 600;
 	color: #282828;
 }
 
-.blog-parag, .blog-date {
+.card-parag, .card-date {
 	font-weight: 500;
 	text-align: justify;
 	color: rgba(58, 58, 58, 0.6);
 }
 
-.blog-parag {
-	font-size: 1.25rem;
+.card-parag {
+	font-size: 1rem;
 }
 
-.blog-date {
-	font-size: 1rem;
+.card-date {
+	font-size: 0.8rem;
 }

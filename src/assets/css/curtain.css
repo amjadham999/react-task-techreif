@@ -1,0 +1,5 @@
+.intro-bg-img {
+	background: url('../images/header_img.svg') no-repeat center scroll;
+	background-size: cover;
+	height: 50vh;
+}

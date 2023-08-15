@@ -1,8 +1,8 @@
-import "../../assets/css/blogs.css";
+import "../../assets/css/curtain.css";
 import Intro from "../Intro";
 import ActiveBlog from "../Sections/ActiveBlog";
-import BlogCard from "../Sections/BlogCard";
-import data from "../../Data/BlogData";
+import Card from "../Sections/Card";
+import data from "../../Data/BlogsData";
 
 const BlogPage = () => {
 	return (
@@ -17,12 +17,10 @@ const BlogPage = () => {
 			</div>
 			{/* <!-- Blogs Grid --> */}
 			<div className="container my-5">
-				<section className="container-fluid text-center p-0 pt-5 mb-5">
-					<h2 className="custom-title-2">Popular Blogs</h2>
-				</section>
+				<Intro data={{title: data.grid.title}} />
 				<div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
-					{data.cards.map((card, index) => (
-						<BlogCard key={index} data={card} />
+					{data.grid.cards.map((card, index) => (
+						<Card key={index} data={card} />
 					))}
 				</div>
 			</div>
