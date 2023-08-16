@@ -1,0 +1,25 @@
+.service-header {
+	background: url('../images/header_img.svg') no-repeat center scroll;
+	background-size: cover;
+	height: 50vh;
+}
+
+.service-card {
+	background-color: white;
+	/* width: ; */
+	-webkit-box-shadow: 2px 4px 15px 0px rgb(230, 230, 230);
+	-moz-box-shadow: 2px 4px 15px 0px rgba(230, 230, 230, 1);
+	box-shadow: 2px 4px 15px 0px rgb(230, 230, 230);
+}
+
+.service-parag {
+	font-size: 1rem;
+	font-weight: 600;
+	color: rgba(126, 126, 126, 0.6);
+}
+
+.services {
+	background-image: url('../images/services_bg_img.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -1,7 +1,7 @@
-import serviceImg01 from '../../assets/images/home_services_img_01.svg';
-import serviceImg02 from '../../assets/images/home_services_img_02.svg';
-import serviceImg03 from '../../assets/images/home_services_img_03.svg';
-import serviceImg04 from '../../assets/images/home_services_img_04.svg';
+import serviceImg01 from '../../assets/images/services_img_01.svg';
+import serviceImg02 from '../../assets/images/services_img_02.svg';
+import serviceImg03 from '../../assets/images/services_img_03.svg';
+import serviceImg04 from '../../assets/images/services_img_04.svg';
 
 const ServicesSection = () => {
 	return (
